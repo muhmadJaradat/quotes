@@ -3,17 +3,21 @@ package quotes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class Quote {
     List<String> tags;
     private String author;
     private  String likes;
     private String text;
 
-    public User(List<String> tags, String author, String likes, String text) {
+    public Quote(List<String> tags, String author, String likes, String text) {
         this.tags = new ArrayList<>();
         this.author = author;
         this.likes = likes;
         this.text = text;
+    }
+
+    public Quote(String text) {
+        this.text=text;
     }
 
     public List<String> getTags() {

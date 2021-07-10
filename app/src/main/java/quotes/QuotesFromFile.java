@@ -6,21 +6,19 @@ package quotes;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class Quotes {
+public class QuotesFromFile {
 
     private static Reader reader;
 
-    private  static String pathUrl="app/src/main/resources/quotes.JSON";
 
-     static List<User> allQuotes;
-public static void fromJson(String pathUrl)
+     static List<Quote> allQuotes;
+public static String fromJson(String pathUrl)
         {
               int randomIndex= (int) (Math.random()*159);
             try {
@@ -30,25 +28,20 @@ public static void fromJson(String pathUrl)
                 error.printStackTrace();
             }
 
-            allQuotes = new Gson().fromJson(reader, new TypeToken<List<User>>() {}.getType());
+            allQuotes = new Gson().fromJson(reader, new TypeToken<List<Quote>>() {}.getType());
 
 
 
-            System.out.println(allQuotes.get(randomIndex).getText());
+            return (allQuotes.get(randomIndex).getText());
 
         }
 
-    public  List<User> getAllQuotes() {
+    public  List<Quote> getAllQuotes() {
         return allQuotes;
     }
 
-    public static String getPathUrl() {
-        return pathUrl;
-    }
 
-    public static void main(String[] args) {
-        fromJson(getPathUrl());
 
-    }
+
 
 }
