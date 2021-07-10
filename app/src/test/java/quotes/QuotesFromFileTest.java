@@ -6,10 +6,10 @@ package quotes;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class QuotesTest {
+class QuotesFromFileTest {
     @Test void test(){
-        Quotes newQuote=new Quotes();
-        String path="C:\\Users\\muhma\\OneDrive\\Desktop\\401 java\\projects\\quotes\\app\\src\\main\\resources\\quotes.JSON";
+        QuotesFromFile newQuote=new QuotesFromFile();
+        String path="C:/Users/muhma/OneDrive/Desktop/401 java/projects/quotes/app/src/main/resources/quotes.JSON";
 
 newQuote.fromJson(path);
 assertEquals("Marilyn Monroe",newQuote.getAllQuotes().get(0).getAuthor());

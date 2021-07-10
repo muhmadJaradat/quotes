@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5060cd-79c1-4c13-aa66-c79a81bee978" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/quotes/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/quotes/QuotesFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/quotes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/quotes/Quote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/quotes/QuotesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/quotes/QuotesFromFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +61,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.Quotes">
-    <configuration name="Quotes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quotes.Quotes" />
+  <component name="RunManager" selected="Gradle.QuotesFromFileTest">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="quotes.App" />
       <module name="quotes.app.main" />
       <extension name="coverage">
         <pattern>
@@ -69,6 +74,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="QuotesFromFileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;quotes.QuotesFromFileTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="QuotesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -135,10 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuotesFromFileTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.QuotesTest" />
         <item itemvalue="Gradle.QuotesTest.test" />
         <item itemvalue="Gradle.quotes [dependencies]" />
-        <item itemvalue="Application.Quotes" />
       </list>
     </recent_temporary>
   </component>
@@ -163,5 +190,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.google.gson.Gson" memberName="factories" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
